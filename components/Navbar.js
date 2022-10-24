@@ -22,7 +22,7 @@ export default function Navbar() {
             <button className="font-medium bg-cyan-500 text-white py-2 px-4 text-sm rounded-md">Post</button>
           </Link>
           <Link href="/dashboard">
-          <Image src={user.photoURL} width={50} height="50" className="v-10, rounded-full" />
+          <Image src={user.photoURL} alt="userAvatar" width={50} height="50" className="v-10, rounded-full" />
           </Link>
         </div>
       )}

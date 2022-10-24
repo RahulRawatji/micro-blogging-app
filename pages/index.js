@@ -35,7 +35,7 @@ export default function Home() {
         <div>
           <h2>See What Other People are Saying</h2>
           {allPost.map(post => {
-            return <Message {...post} >
+            return <Message {...post} key={post.id} >
               <Link href={{ pathname: `/${post.id}`, query:{...post} }}>
                 <button>{post.comments?.length > 0 ? post.comments?.length : 0 } Comments</button>
               </Link>
